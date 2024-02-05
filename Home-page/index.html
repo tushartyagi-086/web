@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike rentals in City | Bikes for rent in City |</title>
+    <link rel="icon" type="image/x-icon" href="../pages/images/Rblogo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
+    <script src="https://kit.fontawesome.com/337fe3a5de.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+    <section class="FindCityPop">
+        <div class="cityBody">
+            <div class="CityConatainer">
+                <div class="popUpTittle">
+                    <img src="../pages/images/logoRB.png"><span>|</span><h3>Bike Rentals</h3></div>
+                <div class="SearchCity">
+                    <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search or Type to Select your city"><span>Clear</span>
+                </div>
+    
+                <div class="CityGridBox" id="CityGridBox">
+                
+                    <!-- <div class="cityNames"><img src="https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/039/original/Agra_new.jpg" alt=""><p>Banglore</p></div> -->
+    
+                    <!-- <div class="cityNames"><img src="" alt=""><p>Banglore</p></div> -->   
+    
+                </div>
+            </div>
+        </div>  
+    </section>
+
+
+    <div class="contact-bar">
+    <i class="fa-solid fa-phone"></i><p>+919999999987 / +919000980008</p><span>|</span><a href="">Chat Now</a>
+    </div>
+
+
+ <!--HTML for NavBar -->  
+
+    <nav>
+        <div id="iconMenu">
+             <div><i class="fa-solid fa-bars"></i></div>
+            <img src="../pages/images/Rblogo.png" alt="icon">
+        </div>
+       <div id="navMenu">
+        <a href="index.html"><img src="../pages/images/logoRB.png" alt="subscription"></a>
+        <a href="../tarrif/tariff.html">Tariff</a>
+        <a href="../Whats-new-module/store.html">What's new? <i class="fa-solid fa-chevron-down"></i></a>
+        <a href="index.html">Offers </a>
+        <a href="index.html">Partner with us <i class="fa-solid fa-chevron-down"></i></a>
+       </div>
+       <div id="SelectCity">
+            <button>
+                <!-- <i class="fa-solid fa-location-dot"></i> -->
+                <img src="https://www.pikpng.com/pngl/b/48-484762_location-png.png" alt="">
+                <span>City Name</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+        </div>
+        
+       <div id="loginSignup">
+        <button>Login</button>
+        <button>Sign up</button>
+       </div>
+    </nav>
+
+<!--End HTML for NavBar --> 
+
+
+<div class="top-part">
+    <div class="select-ride">
+        <form id="pick-form" >
+            <h2>Search your next ride</h2>
+            <label>Pickup</label>
+            <div>
+                
+              <input type="text" placeholder="Date"
+              onfocus="(this.type='date')">
+              <input type="text" placeholder="Time"
+              onfocus="(this.type='date')">
+            </div>
+            <label>Dropoff</label>
+            <div>
+              <input type="text" placeholder="Date"
+              onfocus="(this.type='date')">
+              <input type="text" placeholder="Time"
+              onfocus="(this.type='date')">
+            </div>
+
+            <input type="submit">
+            
+        </form>
+    </div>
+    <div class="tpFoot"><p><span>SAVE</span> UPTO <span>30%</span> WITH CARBORNE</p></div>
+</div>
+
+
+<div class="bikeAndLifeInsurence">
+    <div><img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_sanitized-a37325c03fb50fd9b2783d574ba67c40cb7b8a90d5951a85f72095904943e1d6.png" alt=""><p>Sanitized Vehicles</p></div>
+    <div><img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_insurance-84ee18a118bee4cfc4f774e0dbdb5d24431af458eb583d5d1c5822801e388764.png" alt=""><p>Vehicle Insurance</p></div>
+    <div><img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_assistance-ec66ebeeb0ebb01468fc1729165040e172820de83d5037cf47a73f4e19177d68.png" alt=""><p>24/7 Roadside Assistance</p></div>
+    <div><img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/redesign/feature_tag_maintainence-4ac25e7eb9ad6f8b78ec52640a7310d8083a21823e1fb54ca9872076c2bc5f34.png" alt=""><p>Bike Maintenance</p></div>
+</div>
+
+<div class="middlePart">
+    <a href="">
+    <div class="offer">
+        <button>Subscribe Now <i class="fa-solid fa-arrow-right-long"></i></button>
+    </div>
+    </a>
+</div>
+
+<div class="bodyHeadings"><h2>OUR FLEET</h2><hr></div>
+
+
+<div class="FleetContainer">
+    <div>
+        <p></p>
+        <img src="data:image/jpeg;base64,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" alt="">
+        <p></p>
+        <button></button>
+    </div>
+    <div>
+        <p></p>
+        <img src="" alt="">
+        <p></p>
+        <button></button>
+    </div>
+    <div>
+        <p></p>
+        <img src="" alt="">
+        <p></p>
+        <button></button>
+    </div>
+    <div>
+        <p></p>
+        <img src="" alt="">
+        <p></p>
+        <button></button>
+    </div>
+</div>
+
+<div class="bodyHeadings"><h2>WE BELIEVE IN QUALITY</h2><hr></div>
+
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+     <div class="mySlidesContant">
+        <h1>Ready to serve you in 40+ cities! </h1>
+       <p>Think of a city & we are mostly there. The next time you plan on exploring a city, know that your means of transport is sorted with CarBorne. #BhaiHaiNa
+        </p></div>
+      <img src="../Landing-Page/images/slide3.jpg" style="width:100%;height: 100vh;">
+
+      
+    </div>
+    
+    <div class="mySlides fade">
+        <div class="mySlidesContant">
+            <h1>WE BELIEVE IN QUALITY
+                We’re socially celebrated</h1>
+           <p> Our customer centric approach has got us amazing reviews. Be it any platform, you will see many users recommending our service.</p></div>
+      
+      <img src="../Landing-Page/images/slide1.jpg" style="width:100%;height: 100vh;">
+     
+    </div>
+    
+    <div class="mySlides fade">
+        <div class="mySlidesContant">
+            <h1>Bikes maintained so good,you will feel it is brand-new</h1>
+           <p> We obsess on giving you the best possible experience. This is not only with well serviced bikes but also with a 24/7 support team available just a call away.</p></div>
+   
+      <img src="../Landing-Page/images/slide2.jpg" style="width:100%;height: 100vh;">
+
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+   
+    
+
+<div class="bodyHeadings"><h2>FEATURED IN</h2><hr></div>
+
+
+<div class="slideshow-container1">
+
+    <div class="mySlides1 fade1">
+      <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/news2-b2db5fe5ecf6968d4e47cba7876d3ae8a959a5de65901b5a6292032987a38bdd.png" style="width:25%">
+    </div>
+    
+    <div class="mySlides1 fade1">
+      <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/money_control-0301bddd4ac901172098f7d0b590e8dbed35e7fa1064d2ced799f9cbc9185d66.png" style="width:25%">
+    </div>
+    
+    <div class="mySlides1 fade1">
+      <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/the_better_india-09cca403fbe2fe19974cb1701aaa87fce8e587f32a18bc477ebf28f05e1c1788.png" style="width:25%">
+    </div>
+    <div class="mySlides1 fade1">
+        <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/inc_42-59ce79f32655b91f34e9ed4e5d53175f446ea263b57ffc85fd3572a1a4a1aade.jpg" style="width:25%">
+      </div>
+      <div class="mySlides1 fade1">
+        <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/the_indian_express-e2581d704a7b572ef2d66812e5a264c6ab753e109a200c4da8e249b82e3c9f52.jpg" style="width:25%">
+      </div>
+      <div class="mySlides1 fade1">
+        <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/news3-2eb9e0398a565284ca3c41d685e32de985b43ce00541889f59541ee91cb28e61.png" style="width:25%">
+      </div> 
+      <div class="mySlides1 fade1">
+        <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/news1-0a213d6dc03c6d68b278a11f210efe7cd727bf2f1fc34982b90b34d2d1c875da.png" style="width:25%">
+      </div>   
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>  
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+
+ <!--HTML for MainBody -->  
+
+
+ 
+
+    
+ <!--HTML for Footer -->
+
+
+    <footer id="home-Footer">
+       <div id="main-footer">
+            <div>
+                <h5>CARBORNE</h5>
+                <hr>
+                <div>
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/white-mail-f7a800f328eab451231c558115ad0067bdd6c5ba04b7acd19f22ae4036e702d1.png" alt="phone icon">
+                <p>support@Carborne.com</p>
+                </div>
+                <div>
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/white-phone-d7daea12563d63fb4bd1cbb2fa0a824d19501def56934aff125e23343912895e.png" alt="phone icon">
+                    <p>+917795687594/+919019595595</p>
+                </div> 
+            </div>
+            <div>
+                <h5>COMPANY</h5>
+                <hr>
+                <a href="">About Us</a>
+                <a href="">Blog</a>
+                <a href="">Careers</a>
+                <a href="">Contact Us</a>
+
+            </div>
+            <div>
+                <h5>POLICIES</h5>
+                <hr>
+                <a>Privacy Policy</a>
+                <a>Terms & Conditions</a>
+            </div>
+            <div>
+                <h5>QUICK LINKS</h5>
+                <hr>
+                <a href="">Tariff</a>
+                <a href="">Own a franchise</a>
+                <a href="">Earn with us</a>
+                <a href="">Indian bike routes</a>
+            </div>
+      
+            <div>
+                <h5>FOLLOW US</h5>
+                <hr>
+                <div class="socialmedia">
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/Insta-e068316ffc568b3c0162ef129542c4ec473fedb2317cc8132168a07a0616b475.png" alt="insta logo">
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/Facebook-ad24f92a1479ca4c5b308092f11f91d3ad2189d505ba2a737f376943a89b721b.png" alt="FB Logo">
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/Linkedin-685bfa4464dc2263601740aad98014e02801299c7f2104be70458ac13d061fa1.png" alt="Linkedn Logo">
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/Youtube-35dbc9202b8e7b71d09c782934215b9f6a78a1b3b11d190b5ad275c004484295.png" alt="">
+                </div>    
+            </div>
+            <div class="followUs">
+                <h5>DOWNLOAD OUR APP</h5>
+                <hr>
+                <div>
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/app_store-4407bc8ced0d52a50ff042ce51e32d51de3e11717955798ec54c6a28e7926c7c.png" alt="App Store">
+                    <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/play_store-057f9061b4cd0fd4953a485569c15e63fdf8d89b0bcc025c04cfb34d9e8cd571.png" alt="Play Store">
+                </div>    
+            </div>
+           
+      
+        
+      </div>   <!--  end of main footer -->
+
+      <div id="subfooter">
+        <h2>Bike Rentals in Agra</h2>
+        <h1>OUR PRESENCE</h1>
+        <hr>
+        <div>
+            <p>
+                Bikes for rent in Agra <span class="dotFoot"></span>  Bikes for rent in Ahmedabad <span class="dotFoot"></span>  Bikes for rent in Alleppey<span class="dotFoot"></span>    Bikes for rent in Amritsar <span class="dotFoot"></span>   Bikes for rent in Andaman Nicobar <span class="dotFoot"></span>  Bikes for rent in Bangalore <span class="dotFoot"></span>  Bikes for rent in Bangalore Airport <span class="dotFoot"></span>   Bikes for rent in Bangkok <span class="dotFoot"></span>  Bikes for rent in Belagavi <span class="dotFoot"></span>   Bikes for rent in Bhubaneswar <span class="dotFoot"></span>  Bikes for rent in Bhuj <span class="dotFoot"></span>  Bikes for rent in Calicut <span class="dotFoot"></span>  Bikes for rent in Chandigarh <span class="dotFoot"></span>  Bikes for rent in Chennai <span class="dotFoot"></span>  Bikes for rent in Chikmagalur <span class="dotFoot"></span>   Bikes for rent in Cochin <span class="dotFoot"></span>  Bikes for rent in Coimbatore <span class="dotFoot"></span>  Bikes for rent in Coorg - Kushalnagar <span class="dotFoot"></span>  Bikes for rent in Coorg - Madikeri <span class="dotFoot"></span>  Bikes for rent in Davanagere <span class="dotFoot"></span>  Bikes for rent in Delhi <span class="dotFoot"></span>  Bikes for rent in Dharamshala <span class="dotFoot"></span>  Bikes for rent in Ganapati pule <span class="dotFoot"></span>  Bikes for rent in Gandhinagar <span class="dotFoot"></span>  Bikes for rent in Goa <span class="dotFoot"></span>  Bikes for rent in Guntur <span class="dotFoot"></span>  Bikes for rent in Gurugram <span class="dotFoot"></span>  Bikes for rent in Guwahati <span class="dotFoot"></span>  Bikes for rent in Hubli-Dharwad <span class="dotFoot"></span>   Bikes for rent in Hyderabad <span class="dotFoot"></span>  Bikes for rent in Indore <span class="dotFoot"></span>  Bikes for rent in Jaipur <span class="dotFoot"></span>  Bikes for rent in Jaisalmer <span class="dotFoot"></span>  Bikes for rent in Jodhpur <span class="dotFoot"></span>  Bikes for rent in Kolkata <span class="dotFoot"></span>  Bikes for rent in Konark <span class="dotFoot"></span>  Bikes for rent in Lucknow <span class="dotFoot"></span>  Bikes for rent in Manali <span class="dotFoot"></span>  Bikes for rent in Mangalore <span class="dotFoot"></span>  Bikes for rent in Mohali <span class="dotFoot"></span>  Bikes for rent in Mount Abu <span class="dotFoot"></span>  Bikes for rent in Mumbai <span class="dotFoot"></span>  Bikes for rent in Mysore <span class="dotFoot"></span>  Bikes for rent in Nashik <span class="dotFoot"></span>  Bikes for rent in Ooty <span class="dotFoot"></span>  Bikes for rent in Pondicherry <span class="dotFoot"></span>  Bikes for rent in Pune <span class="dotFoot"></span>  Bikes for rent in Puri <span class="dotFoot"></span>  Bikes for rent in Ranchi <span class="dotFoot"></span>  Bikes for rent in Rishikesh <span class="dotFoot"></span>  Bikes for rent in Sakleshpur <span class="dotFoot"></span>  Bikes for rent in Siliguri <span class="dotFoot"></span>  Bikes for rent in Srinagar <span class="dotFoot"></span>  Bikes for rent in Surat <span class="dotFoot"></span>  Bikes for rent in Tirupati <span class="dotFoot"></span>  Bikes for rent in Trivandrum <span class="dotFoot"></span>  Bikes for rent in Udaipur <span class="dotFoot"></span>  Bikes for rent in Udupi - manipal <span class="dotFoot"></span>   Bikes for rent in Vijayawada <span class="dotFoot"></span> Bikes for rent in Vizag <span class="dotFoot"></span> Bikes for rent in Wayanad
+            </p>
+        </div>
+       </div> <!-- End subfooter -->
+       <div id="tail"><p> Made with <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/like-b8b570f724101252e5c39d8bd66246607fb226e93e3ba17b0516209b20832345.png" alt=""> by team CarBorne </p></div>
+    </footer>
+    
+
+ <!-- HTML of Footer Completed -->
+       
+  
+
+    
+</body>
+</html>
+
+
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+
+    let slideIndex1 = 0;
+    showSlides1();
+    
+    function showSlides1() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides1");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex1++;
+      if (slideIndex1 > slides.length) {slideIndex1 = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex1-1].style.display = "block";  
+      dots[slideIndex1-1].className += " active";
+      setTimeout(showSlides1, 1000); // Change image every 2 seconds
+    }
+    </script>
+
+<script>
+
+    var CityDetails =[
+        {ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/039/original/Agra_new.jpg",
+        City_name : "Agra"},
+
+        {ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/023/original/Ahmedabad_b8d1eb5783c996a077aff887d35e4168.jpg",
+        City_name :"Ahmedabad"},
+
+        {ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/022/original/Alleppy_817ae817e23cf6708ce38c850cc42e6d.jpg",	
+        City_name : "Alleppey"},
+
+        
+        {ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/101/original/Amritsar.jpg",
+        City_name : "Amritsar"},
+
+        {ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/017/original/Andaman-_-Nicobar_b5a3ba5c464968f274dfb7a98bcc4dbc.jpg",
+        City_name : "Andaman Nicobar"}
+        ,{ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/001/original/Bangalore_1cf1aa53741a94edc3532f7b2b583c52.jpg"
+            
+        ,City_name : "Bangalore"
+        }
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/051/original/PHOTO-2021-02-01-15-55-27.jpg"
+            
+         ,City_name : "Bangalore Airport"
+        }
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/028/original/Bankok_efd1b11328e1ac61488cac98a15dc584.jpg"
+            
+         ,City_name :        "Bangkok"}
+        
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/103/original/Belagaum.jpg"
+            
+         ,City_name :        "Belagavi"}
+        
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/097/original/Bhubneswar_1f33e6ba5edf52d880c1bd9f340b80f4.jpg"
+        ,City_name :         "Bhubaneswar"}
+        
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/049/original/Bhuj_abf00061bcecebbbd41e8fc317949439.jpg"
+            
+        ,City_name :         "Bhuj"
+        }
+       ,{ ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/098/original/Calicut-city-icon.jpg"
+            
+         ,City_name :        "Calicut"}
+        
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/024/original/Chandigarh_72374d6c6de8b70d5b4ea5c05c59ba32.jpg"
+            
+         ,City_name :       "Chandigarh"}
+        
+       ,{ ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/018/original/Chennai_e20539d5200238901011bdc1bb2e5a7f.jpg"
+            
+        ,City_name :         "Chennai"
+        }
+       ,{ ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/007/original/Chikmagalur_2651596b6f7e5cbf2d2399fe6ca9c7ad.jpg"
+
+         ,City_name :        "Chikmagalur"}
+        
+       ,{ ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/021/original/Cochin_1606932e14a0d0aa3b02afaffeb23157.jpg"
+
+        ,City_name :         "Cochin"
+        }
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/020/original/Coimbatore_0916e4a9a1cbd3a31eaa15b3a54cc7d2.jpg"
+        ,City_name :         "Coimbatore"}
+        
+       ,{ ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/025/original/Coorg-Kushalnagar_33007141ac0c1776af600c183815b103.jpg"
+            
+        ,City_name :         "Coorg - Kushalnagar"}
+        
+       ,{ ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/003/original/Coorg-Madikeri_23164519f8e58c8a2676595b5209011d.jpg"
+            
+        ,City_name :       "Coorg - Madikeri"}
+        
+       ,{ ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/104/original/Davangere.jpg"
+
+        ,City_name :         "Davanagere"}
+       ,{ 
+        ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/034/original/Delhi_21f83b0bf9a5a2c816623238b7628e52.jpg"
+
+        ,City_name :         "Delhi"}
+        
+       ,{ ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/043/original/Dharmshala_7a856e0aa3f643752440791c28853737.jpg"
+        ,City_name :         "Dharamshala"}
+        
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/029/original/Ganpati-pule_3b01c2992789ac8a2dd36cd903163e89.jpg"
+            
+        ,City_name :         "Ganapati pule"}
+        
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/033/original/Gandhinagar_8e02524723e889989ea128e58d7a229f.jpg"
+        ,City_name :         "Gandhinagar"}
+        
+       ,{ ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/046/original/Goa_2509358334abe698322e4f7523b3356b.jpg"
+         ,City_name :        "Goa"}
+        
+       ,{ ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/096/original/Guntur_a31f793bf22c68fe01479c65dcacd9b7.jpg"
+         ,City_name :        "Guntur"
+        }
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/040/original/Gurugram_652fd0242a3833bf5b68f9d647a12253.jpg"
+        ,City_name :         "Gurugram"}
+        
+       ,{ ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/095/original/Guwahati_3adb5736296c93fec082f24b87dce70d.jpg"
+        ,City_name :         "Guwahati"}
+        
+       ,{ ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/015/original/Hubli_639135a4da835f48ac30404922b193ec.jpg"
+            
+        ,City_name :         "Hubli-Dharwad"}
+        
+       ,{ ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/012/original/Hyderabad_e23f5904385e0c21afd0fe4b7ff698fb.jpg"
+            
+        ,City_name :       "Hyderabad"}
+        
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/036/original/Indore_6122bfbe93086a5ae36ab1849b9e458a.jpg"
+        ,City_name :         "Indore"}
+        
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/089/original/Jaipur_5d0bb59a74413b8ff68e8e3b0678579b.jpg"
+         ,City_name :        "Jaipur"}
+        
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/035/original/Jaisalmer_803980ec3a977dd61c215c5fbefd3909.jpg"
+        ,City_name :         "Jaisalmer"}
+        
+       ,{ ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/041/original/Jodhpur_43e3b5d3b7a6ecf2b8e33c5d5364f959.jpg"
+        ,City_name :         "Jodhpur"}
+                       
+        
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/042/original/Kolkata_656fd6c811baa1db3af9c01e0a1c29f8.jpg"
+            
+        ,City_name :         "Kolkata"}
+        
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/106/original/Konark.jpg"
+        ,City_name :         "Konark"}
+        
+       ,{ ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/100/original/Lucknow.jpg"
+            
+         ,City_name :        "Lucknow"}
+        
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/088/original/Manali_db3125c181b228a8b97ace561edff2da.jpg"
+            
+        ,City_name :         "Manali"}
+        
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/005/original/Mangalore_bbaef83490a59adabb31955b66e96ece.jpg"
+        ,City_name :         "Mangalore"}
+        
+       ,{ ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/092/original/Mohali_5245075067b3493799088e81ff562e47.jpg"
+         ,City_name :        "Mohali"}
+        
+       ,{ ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/048/original/Mount-abu_d53ba3ad1b7d1691c2703206dbfca6cc.jpg"
+        ,City_name :         "Mount Abu"}
+        
+       ,{ ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/047/original/Mumbai_733c382a5ea084d09053d85a63fb7a94.jpg"
+            
+        ,City_name :         "Mumbai"}
+        
+       ,{ ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/004/original/Mysore_8633f885a5cd3d96158a131276b2e17d.jpg"
+            
+        ,City_name :         "Mysore"}
+        
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/099/original/Nashik-city-icon.jpg"
+            
+         ,City_name :        "Nashik"}
+        
+        ,{ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/019/original/Ooty_0993dc8d65555073664d2d74d5873ef6.jpg"
+            
+        ,City_name :         "Ooty"}
+        
+        ,{ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/013/original/Pondicherry_7dbb9d6cff59c439a046466be6e3d664.jpg"
+            
+        ,City_name :         "Pondicherry"
+        }
+        ,{ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/032/original/Pune_1a59a81f20afd18b33c2127fb9f13f67.jpg"
+            
+        ,City_name :         "Pune"}
+        
+        ,{ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/027/original/Puri_bd4b5d1e9a9e9b07340a108974ab1953.jpg"
+            
+        ,City_name :        "Puri"}
+        
+        ,{ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/094/original/Ranchi_fe0b00657315e345c52993f1bf78694b.jpg"
+        ,City_name :         "Ranchi"
+        }
+        ,{ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/045/original/RIshikesh_b58a0cac50cbbf5d26f92be797eee1f3.jpg"
+        ,City_name :         "Rishikesh"}
+        
+       ,{ ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/016/original/Sakleshpur_3abe9ba47c4a41b1bad62cea4a343b6b.jpg"
+            
+        ,City_name :         "Sakleshpur"}
+        
+        ,{ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/026/original/Siliguri_8da05b2cd461b2a31deef292bacbf308.jpg"
+            
+        ,City_name :        "Siliguri"}
+        
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/090/original/Srinagar_851409b27523f379ee459eb3144a54fa.jpg"
+            
+         ,City_name :        "Srinagar"}
+        
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/105/original/Surat.jpg"
+            
+         ,City_name :        "Surat"}
+        
+       ,{ ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/038/original/Tirupati1.jpg"
+            
+         ,City_name :        "Tirupati"}
+        
+        ,{ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/010/original/Trivandrum_a97e88c067a5f33f21891be82a1d2e3f.jpg"
+            
+        ,City_name :         "Trivandrum"}
+        
+        ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/037/original/Udaipur_cd4a37490dc1fdddac20ecb951cf8b56.jpg"
+            
+         ,City_name :        "Udaipur"}
+        
+        ,{ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/006/original/Udupi-manipal_70cae34b5c765444080986c470b4a4f5.jpg"
+            
+        ,City_name :         "Udupi - manipal"}
+        
+        ,{ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/009/original/Vijaywada_a37af28439dd8341d51c36fbd2da441d.jpg"
+            
+        ,City_name :        "Vijayawada"}
+        
+        ,{ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/011/original/Vizag_b8d34a7c3694ce45f4e36b0fea4bc28d.jpg"
+            
+        ,City_name :         "Vizag"}
+        
+        ,{ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/091/original/Wayanad_15c7fd5a77bb7e90946c124bbcd9c563.jpg"
+            
+        ,City_name :         "Wayanad"}
+     ]
+
+
+
+        displayCities(CityDetails);
+
+        function displayCities(CityList){
+            CityList.map(function(city){
+                
+                var box = `<img src="${city.ImgCity_URL}" alt=""><p>${city.City_name}</p>`;
+                var citybox=document.createElement("div");
+                citybox.setAttribute('class','cityNames');
+                citybox.innerHTML = box;
+
+                citybox.addEventListener("click",function(){
+                    StoreCity(city.City_name);
+                })
+                
+                document.getElementById("CityGridBox").append(citybox);
+
+            })
+        }
+
+        function StoreCity(val) {
+          localStorage.setItem("presentCity",val);
+        var sitname = "../pages/" +val + ".html";
+        window.open(`${sitname}`, "_self");
+      }
+
+
+</script>
+ 
